@@ -21,22 +21,31 @@ This website is RP Diet App or My Fitness Pal but for instrumental practice.  Tr
 
 # Roadmap
 
-## v.01 (Practice Journal - Initial Build, Users, Collect Data, Graph Data)
+## v.01 (Practice Journal - Performer and Practice_session model, CRUD, Host Backend)
 
-- Basic Styling for functionality
 - Create model Performer
 	- Name
 	- Email
 - Create model Practice_session
 	- Length
-- Collect practice data (Frequency by days, length of session)
-- Graph practice data in a bar graph or dot graph
-- Seed database  with practice data from 2018
+- Get CRUD working with Django.
+    - Be able to save practice data for graph 
+    - Be able to read all data collected somehow, graph or list.
+    - Be able to edit submissions
+    - Be able to remove submissions
+- Host backend on Heroku
 
-## v.02 (Practice Journal - Graph Update and Instruments )
+## v.02 (Practice Journal - Frontend, Host Frontend)
 
-- Collect practice data (Checklist of general practice types: Warmup, Long Tones, Technique, Repertoire
-- Allow for multiple instruments (Flute, Piccolo, Classical Flute, Baroque Flute, whatever)
+- Basic Styling for functionality
+    - Login Page Placeholder
+    - Initiate Session page
+    - Session Page w/ Submit 
+    - Review Page with Submit, Update, and Delete 
+    - History page with session history (Display as a list)
+- Host frontend on Netlify
+
+## v.03 (Practice Journal - Instruments, Practice Types, Frontend update)
 
 - Update model Practice_session
 	- Instrument (Flute, Piccolo, Baroque Flute, Classical Flute)
@@ -45,14 +54,11 @@ This website is RP Diet App or My Fitness Pal but for instrumental practice.  Tr
 	- Technique T/F
 	- Repertoire T/F
 
-- Put instrument frequence on some sort of cool chart
-- Update practice graph to allow for new parameters
-- Update 2018 database with new information
+- Front end design to collect practice data (Checklist of general practice types: Warmup, Long Tones, Technique, Repertoire)
+- Front end design to select instrument.  Allow for multiple choice of instruments (Flute, Piccolo, Baroque Flute, Classical Flute)
+- Update display to show new data
 
-## v.03 (Practice Journal - Graph Update and Notes)
-
-- Collect practice data(Checklist of more specific practice types: Type of Warmup, Type of Long Tones, Tuning?, Type of Technique (scales, articulation), type of repertoire (etudes, solo rep)
-- Allow a text field to take general notes from practice session
+## v.04 (Practice Journal - Graph Update and Notes)
 
 - update model Practice_session
 	- Warmup Type (Dropdown)
@@ -62,20 +68,31 @@ This website is RP Diet App or My Fitness Pal but for instrumental practice.  Tr
 	- Type of Repertoire (Dropdown: Etude, Solo Rep, Excerpts, Gig Rep)
 	- Notes (Text Field)
 
-- Update practice graph to allow for new parameters
-- Update 2018 data to match new model.
+- Front end design to accomodate Practice_session model changes
+    - Warmup Type
+    - Long Tone Type
+    - Tuning Type
+    - Technique Type
+    - Repertoire Type
+    - Notes
 
-## v.04(Practice Journal - Database Update)
+- Update practice graph to allow for new parameters
+- Seed database  with practice data from 2018
+
+## v.05 (Practice Journal - Database Update)
 
 - Populate a DB of potential etudes, scales, exercises choices, long tone routines
 - Let User see these DB’s
 
-## v.05(Practice Journal - First Styling Update)
+## v.06 (Practice Journal - First Styling Update, Feedback Submission)
 
 - Match the RP Diet App or MFP App for tracking progress.
 - Choose color scheme
-- Redo Buttons
+- Redo Button design if necessary
 - Revisit graphs
+- Contact Page for feedback submission.  Home button.  
+
+## BREAK
 
 ## v.06 (Teaching Tool - First Student Update)
 
