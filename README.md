@@ -28,7 +28,7 @@ This website is RP Diet App or My Fitness Pal but for instrumental practice.  Tr
 	- Email
 - Create model Practice_session
 	- Length
-- Get CRUD working with Django.
+- Get CRUD working with Django/Admin
     - Be able to save practice data for graph 
     - Be able to read all data collected somehow, graph or list.
     - Be able to edit submissions
@@ -43,6 +43,11 @@ This website is RP Diet App or My Fitness Pal but for instrumental practice.  Tr
     - Session Page w/ Submit 
     - Review Page with Submit, Update, and Delete 
     - History page with session history (Display as a list)
+- Get CRUD working with frontend
+    - Be able to save practice data for graph 
+    - Be able to read all data collected somehow, graph or list.
+    - Be able to edit submissions
+    - Be able to remove submissions
 - Host frontend on Netlify
 
 ## v.03 (Practice Journal - Instruments, Practice Types, Frontend update)
