@@ -35,7 +35,7 @@ This website is RP Diet App or My Fitness Pal but for instrumental practice.  Tr
     - Be able to remove submissions
 - Host backend on Heroku
 
-## v.02 (Practice Journal - Frontend, Host Frontend)
+## v.02 (Practice Journal - Frontend Design)
 
 - Basic Styling for functionality
     - Login Page Placeholder
@@ -43,6 +43,10 @@ This website is RP Diet App or My Fitness Pal but for instrumental practice.  Tr
     - Session Page w/ Submit 
     - Review Page with Submit, Update, and Delete 
     - History page with session history (Display as a list)
+
+
+## v.03 (Practice Journal - React CRUD and Hosting)
+
 - Get CRUD working with frontend
     - Be able to save practice data for graph 
     - Be able to read all data collected somehow, graph or list.
@@ -50,7 +54,7 @@ This website is RP Diet App or My Fitness Pal but for instrumental practice.  Tr
     - Be able to remove submissions
 - Host frontend on Netlify
 
-## v.03 (Practice Journal - Instruments, Practice Types, Frontend update)
+## v.04 (Practice Journal - Instruments, Practice Types, Frontend update)
 
 - Update model Practice_session
 	- Instrument (Flute, Piccolo, Baroque Flute, Classical Flute)
@@ -63,7 +67,7 @@ This website is RP Diet App or My Fitness Pal but for instrumental practice.  Tr
 - Front end design to select instrument.  Allow for multiple choice of instruments (Flute, Piccolo, Baroque Flute, Classical Flute)
 - Update display to show new data
 
-## v.04 (Practice Journal - Graph Update and Notes)
+## v.05 (Practice Journal - Graph Update and Notes)
 
 - update model Practice_session
 	- Warmup Type (Dropdown)
@@ -81,15 +85,18 @@ This website is RP Diet App or My Fitness Pal but for instrumental practice.  Tr
     - Repertoire Type
     - Notes
 
-- Update practice graph to allow for new parameters
 - Seed database  with practice data from 2018
 
-## v.05 (Practice Journal - Database Update)
+## v.06 (Practice Journal - Graph Update)
+
+- Make pretty graphs and charts
+
+## v.07 (Practice Journal - Database Update)
 
 - Populate a DB of potential etudes, scales, exercises choices, long tone routines
 - Let User see these DB’s
 
-## v.06 (Practice Journal - First Styling Update, Feedback Submission)
+## v.08 (Practice Journal - First Styling Update, Feedback Submission)
 
 - Match the RP Diet App or MFP App for tracking progress.
 - Choose color scheme
