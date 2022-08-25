@@ -9,6 +9,10 @@ function Review() {
         navigate('/Initiate')
     }
 
+    const sessionClick = function() {
+        navigate('/Session')
+    }
+
     const deleteClick = function() {
         navigate('/Review')
         // if form empty {
@@ -26,7 +30,7 @@ function Review() {
                 <p>Length:</p>
                 <button onClick={initiateClick}>Submit/Home</button><br></br><br></br>
                 <button>Share via Email</button><br></br><br></br>
-                <button>Edit</button><br></br><br></br>
+                <button onClick={sessionClick}>Edit</button><br></br><br></br>
                 <button onClick={deleteClick}>Delete</button>
             </div>
         </>
