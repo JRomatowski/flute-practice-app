@@ -42,7 +42,7 @@ This website is RP Diet App or My Fitness Pal but for instrumental practice.  Tr
     - Initiate Session page
     - Session Page w/ Submit 
     - Review Page with Submit, Update, and Delete 
-    - History page with session history (Display as a list)
+    - History page with session history placeholder 
 
 
 ## v.03 (Practice Journal - React CRUD)
@@ -52,6 +52,8 @@ This website is RP Diet App or My Fitness Pal but for instrumental practice.  Tr
     - Be able to read all data collected somehow, graph or list.
     - Be able to edit submissions
     - Be able to remove submissions
+
+- Display data in history page as a list
 
 ## v.04 (Practice Journal - User Authentication and Hosting)
 

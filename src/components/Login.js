@@ -1,6 +1,14 @@
 import '../App.css'
+import { useNavigate } from 'react-router-dom'
 
 function Login() {
+
+    const navigate = useNavigate();
+
+    const initiateClick = function() {
+        navigate('/Initiate')
+    }
+
     return(
         <>  
             <div id='home-screen-container'> 
@@ -10,7 +18,7 @@ function Login() {
                         <p>Enter in your information below:</p>
                         <form>Username</form>
                         <form>PW</form>
-                        <button>Login</button>
+                        <button onClick={initiateClick}>Login</button>
                     </div>
                 </section>
             </div>
