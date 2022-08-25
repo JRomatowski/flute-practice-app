@@ -19,10 +19,11 @@ function History() {
 
     return(
         <>  
-            <div>History Component</div>
-            <p>List of stats for the person logged in</p>
-            <button onClick={initiateClick}>Go Home</button>
-            <button onClick={contactClick}>Contact</button>
+            <h3>History Component</h3>
+            <div>List of stats for the person logged in</div>
+            <p>Practice Session 1: x minutes long</p>
+            <button onClick={initiateClick}>Go Home</button><br></br>
+            <button onClick={contactClick}>Contact</button><br></br>
             <button onClick={loginClick}>Log Out</button>
         </>
     )

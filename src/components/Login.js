@@ -16,9 +16,12 @@ function Login() {
                     <h2 id='home-title-text'>Flute Practice App</h2>
                     <div id='blurb'>
                         <p>Enter in your information below:</p>
-                        <form>Username</form>
-                        <form>PW</form>
-                        <button onClick={initiateClick}>Login</button>
+                        <div className='login-container'>
+                            <input type="email" className="email" placeholder="Email" name='email'></input><br></br><br></br>
+                            <input type="password" className="password" placeholder="Password" name="password"></input><br></br><br></br>
+                            <button onClick={initiateClick}>Login</button>
+                        </div><br></br>
+
                     </div>
                 </section>
             </div>

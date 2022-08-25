@@ -8,8 +8,10 @@ function Session() {
     const initiateClick = function() {
         navigate('/Initiate')
     }
-    
-    const reviewClick = function() {
+  
+    const reviewClick = function(event) {
+        event.preventDefault()
+        console.log("Info will be submitted here")
         navigate('/Review')
     }
 
@@ -24,11 +26,16 @@ function Session() {
 
     return(
         <>  
-            <div>Session Component</div>
-            <p>Form to enter in stats</p>
-            <button onClick={initiateClick}>Back</button>
-            <button onClick={reviewClick}>Review</button>
-            <button onClick={contactClick}>Contact</button>
+            <h3>Session Component</h3>
+
+            <form onSubmit={reviewClick}>
+                <div>Length of session?</div><br></br>
+                <input type='number'/><br></br><br></br>
+                <button type="submit" onClick={reviewClick}>Review</button>
+            </form><br></br><br></br>
+
+            <button onClick={initiateClick}>Back</button><br></br>
+            <button onClick={contactClick}>Contact</button><br></br>
             <button onClick={loginClick}>Log Out</button>
         </>
     )

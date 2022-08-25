@@ -23,11 +23,10 @@ function Initiate() {
 
     return(
         <>  
-            <div>Initiate Component</div>
-
-            <button onClick={sessionClick}>Practice </button>
-            <button onClick={historyClick}>History</button>
-            <button onClick={contactClick}>Contact</button>
+            <h3>Initiate Component</h3>
+            <button onClick={sessionClick}>Practice!</button><br></br><br></br>
+            <button onClick={historyClick}>History</button><br></br><br></br>
+            <button onClick={contactClick}>Contact</button><br></br><br></br>
             <button onClick={loginClick}>Log Out</button>
         </>
     )

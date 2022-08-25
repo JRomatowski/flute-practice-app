@@ -1,4 +1,4 @@
-import { Routes, Route, Link } from 'react-router-dom'
+import { Routes, Route } from 'react-router-dom'
 import './App.css';
 import Login from "./components/Login";
 import Initiate from './components/Initiate';
@@ -7,18 +7,25 @@ import Review from './components/Review';
 import History from './components/History';
 import Contact from './components/Contact';
 
+// This is for testing
+// import { Link } from 'react-router-dom'
+
 function App() {
 
   return (
     <div className="App">
-      <nav>
+      {/* Below is for testing purposes */}
+      {/* <nav className="test-navbar>
         <Link to="/">Login</Link><br/>
         <Link to="/initiate">Initiate Page</Link><br/>
         <Link to='/session'>Session Page</Link><br/>
         <Link to='/review'>Review Page</Link><br/>
         <Link to='/history'>History Page</Link><br/>
         <Link to='/contact'>Contact Page</Link><br/>
-      </nav>
+      </nav> */}
+      <h1 className='header'>
+        Flute Practice App!
+      </h1>
       <main>
         <Routes>
           <Route path='/' element={<Login/>}/>

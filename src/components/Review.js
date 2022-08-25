@@ -18,24 +18,17 @@ function Review() {
         // }
     } 
 
-    const historyClick = function() {
-        navigate('/History')
-    }
-
-    const contactClick = function() {
-        navigate('/Contact')
-    }
-
     return(
         <>  
-            <div>Review Component</div>
-            <div>Summary of session</div>
-            <button onClick={initiateClick}>Submit</button>
-            <button>Share via Email</button>
-            <button>Edit</button>
-            <button onClick={deleteClick}>Delete</button>
-            <button onClick={historyClick}>History</button>
-            <button onClick={contactClick}>Contact</button>
+            <h3>Review Component</h3>
+            <div className='review-container'>
+                <h4>Summary of Session</h4>
+                <p>Length:</p>
+                <button onClick={initiateClick}>Submit/Home</button><br></br><br></br>
+                <button>Share via Email</button><br></br><br></br>
+                <button>Edit</button><br></br><br></br>
+                <button onClick={deleteClick}>Delete</button>
+            </div>
         </>
     )
 }

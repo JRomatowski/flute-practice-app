@@ -5,10 +5,6 @@ function Contact() {
 
     const navigate = useNavigate();
 
-    const historyClick = function() {
-        navigate('/History')
-    }
-
     const initiateClick = function() {
         navigate('/Initiate')
     }
@@ -20,9 +16,13 @@ function Contact() {
     return(
         <>  
             <div>Contact Component</div>
-            <div>Contact Form Here</div>
-            <button>Submit Contact</button>
-            <button onClick={historyClick}>History</button>
+            <h1 className="contact">Contact Us!</h1>
+            <div className='contact-container'>
+                <input type="text" className="name" placeholder="Name" name='name'></input><br></br><br></br>
+                <input type="email" className="email" placeholder="Email" name='email'></input><br></br><br></br>
+                <textarea className="message" placeholder="Your Message" type="text" rows="10" name="comments, questions?"></textarea><br></br>
+                <button type='submit' className="send">Send</button>
+            </div><br></br>
             <button onClick={initiateClick}>Home</button>
             <button onClick={loginClick}>Logout</button>
         </>
