@@ -68,6 +68,7 @@ This website is RP Diet App or My Fitness Pal but for instrumental practice.  Tr
 	- Long Tones T/F
 	- Technique T/F
 	- Repertoire T/F
+	- Date Collected
 
 - Front end design to collect practice data (Checklist of general practice types: Warmup, Long Tones, Technique, Repertoire)
 - Front end design to select instrument.  Allow for multiple choice of instruments (Flute, Piccolo, Baroque Flute, Classical Flute)
