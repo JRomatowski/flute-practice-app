@@ -15,14 +15,14 @@ function Contact() {
 
     return(
         <>  
-            <div>Contact Component</div>
-            <h1 className="contact">Contact Us!</h1>
-            <div className='contact-container'>
-                <input type="text" className="name" placeholder="Name" name='name'></input><br></br><br></br>
-                <input type="email" className="email" placeholder="Email" name='email'></input><br></br><br></br>
-                <textarea className="message" placeholder="Your Message" type="text" rows="10" name="comments, questions?"></textarea><br></br>
-                <button type='submit' className="send">Send</button>
-            </div><br></br>
+            <h3>Contact Us!</h3>
+            <form className='contact-form' action="https://formsubmit.co/joshuaromatowski@gmail.com" method="POST" >
+                <input type="text" placeholder="Name" name='name'></input><br></br><br></br>
+                <input type="email" placeholder="Email" name='email'></input><br></br><br></br>
+                <input type="hidden" name="_next" value="http://localhost:3000/Initiate"></input>
+                <textarea placeholder="Your Message" type="text" rows="10" name="comments"></textarea><br></br>
+                <button type='submit'>Send (This may take a moment)</button>
+            </form><br></br>
             <button onClick={initiateClick}>Home</button>
             <button onClick={loginClick}>Logout</button>
         </>

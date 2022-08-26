@@ -7,6 +7,14 @@ This website is designed to belike the RP Diet App, Fitbit, or MyFitnessPal but 
 - Backend - Django/Python
 - Database - postgresql
 
+# Installations required
+
+- Front End
+	- npm i axios
+	- npm i bootstrap@5.2.0
+	- npm i react-chartjs-2
+	- npm i cdbreact
+
 # User Stories:
 
 - As a performer, I want to be able to track my flute practicing so I know what I've done and to help clarify what to do to improve moving forward.
@@ -58,10 +66,10 @@ This website is designed to belike the RP Diet App, Fitbit, or MyFitnessPal but 
 
 - Display data in history page as a list
 
-## v.4 - (Practice Journal - User Authentication and Contact Page)
+## v.4 - (Practice Journal - Graph Update and Styling Upgrade 1)
 
-- Incorporate user authentication
-- Make contact page work
+- Make the data display in any chart at all
+- Do a round of restyling.  Get acquainted with bootstrap
 
 ## v.5 - MVP (Practice Journal - Hosting and connecting)
 
@@ -69,16 +77,15 @@ This website is designed to belike the RP Diet App, Fitbit, or MyFitnessPal but 
 - Re Host backend
 - Connect front end to back end with new live heroku link
 
-## v.6 - (Practice Journal - Graph Update and Styling Upgrade 1)
-
-- Make the data display in any chart at all
-- Do a round of restyling.  Get acquainted with bootstrap
-
 ## v.6.5 - (Practice Journal - Presentation)
 
 - Prep class presentation
 
 # Presentation
+
+## v.6 - (Practice Journal - User Authentication)
+
+- Incorporate user authentication
 
 ## v.7 (Practice Journal - Model upgrade: Instruments and Practice Types)
 
