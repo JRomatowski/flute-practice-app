@@ -45,7 +45,7 @@ function Review() {
                 <h4>Summary of Session</h4>
                 <p>Length: {sessionHistory.length} minutes</p>
                 <button onClick={initiateClick}>Submit/Return Home</button><br></br><br></br>
-                <button>Share via Email</button><br></br><br></br>
+                {/* <button>Share via Email</button><br></br><br></br> */}
                 <button onClick={sessionClick}>Edit</button><br></br><br></br>
                 <button onClick={deleteClick}>Delete/Return Home</button>
             </div>

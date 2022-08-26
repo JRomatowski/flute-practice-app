@@ -37,3 +37,8 @@
   }
 }
 
+.history-list {
+  overflow: scroll;
+  color: blank;
+}
+
