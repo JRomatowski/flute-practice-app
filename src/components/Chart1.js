@@ -7,15 +7,15 @@ import axios from 'axios'
 
 const Chart1 = () => {
 
-    // const [sessionHistory, setSessionHistory] = useState([])
+    const [sessionHistory, setSessionHistory] = useState([])
     const [graphHistory, setGraphHistory] = useState([])
     const [dateHistory, setDateHistory] = useState([])
-
 
     useEffect(() => {
         axios.get('http://127.0.0.1:8000/history')
             .then(res => {
                 let data = res.data.practice_sessions
+                setSessionHistory(data)
                 let lengthArray = []
                 let dateArray = []
                 for(let i=0; i < data.length; i+=1) {
@@ -25,32 +25,10 @@ const Chart1 = () => {
                 setGraphHistory(lengthArray)
                 setDateHistory(dateArray)
             })
-    }, [])
-
-    // console.log(graphHistory)
-
-    // const [data] = useState({
-    // labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'],
-    // datasets: [
-    //     {
-    //     label: 'Practice Amount',
-    //     backgroundColor: 'rgba(194, 116, 161, 0.5)',
-    //     borderColor: 'rgb(194, 116, 161)',
-    //     // data: [65, 59, 90, 81, 56, 55, 40],
-    //     data: graphHistory
-    //     },
-    //     // {
-    //     // label: 'My Second dataset',
-    //     // backgroundColor: 'rgba(71, 225, 167, 0.5)',
-    //     // borderColor: 'rgb(71, 225, 167)',
-    //     // data: [28, 48, 40, 19, 96, 27, 100],
-    //     // },
-    // ],
-    // });
+    }, [sessionHistory])
 
     return (
     <CDBContainer>
-        {/* <h3 className="mt-5">Line Chart</h3> */}
         <Line 
             data={{
                 labels: dateHistory,

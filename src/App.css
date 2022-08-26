@@ -38,7 +38,8 @@
 }
 
 .history-list {
-  overflow: scroll;
-  color: blank;
+  overflow: auto;
 }
 
+
+/* Break */

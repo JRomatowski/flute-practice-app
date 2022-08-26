@@ -6,6 +6,7 @@ import Session from './components/Session';
 import Review from './components/Review';
 import History from './components/History';
 import Contact from './components/Contact';
+import Title from './components/Title';
 
 // This is for testing
 // import { Link } from 'react-router-dom'
@@ -24,7 +25,7 @@ function App() {
         <Link to='/contact'>Contact Page</Link><br/>
       </nav> */}
       <h1 className='header'>
-        FluteTracker
+        <Title />
       </h1>
       <main>
         <Routes>
