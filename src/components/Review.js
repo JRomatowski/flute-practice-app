@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom'
 import {useState, useEffect} from 'react'
 import axios from 'axios'
 import Chart1 from './Chart1'
-import HistoryStats from './HistoryStats'
+import HistoryStatsNoModify from './HistoryStatsNoModify'
 
 function Review() {
 
@@ -52,7 +52,7 @@ function Review() {
                 <button onClick={deleteClick}>Delete/Return Home</button><br></br><br></br>
                 <h4>Current Chart</h4>
                 <Chart1 /><br></br>
-                <HistoryStats />
+                <HistoryStatsNoModify />
             </div>
         </>
     )
