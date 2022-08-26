@@ -32,7 +32,10 @@ function Review() {
     }
 
     const deleteClick = function() {
-        navigate('/Review')
+        let idToDelete = sessionHistory.id
+        console.log(idToDelete)
+        axios.delete(`http://127.0.0.1:8000/history/${idToDelete}`, idToDelete)
+        navigate('/Initiate')
     } 
 
     return(
