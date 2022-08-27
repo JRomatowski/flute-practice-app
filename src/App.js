@@ -2,16 +2,27 @@ import { Routes, Route } from 'react-router-dom'
 import './App.css';
 import Login from "./routes/Login/Login";
 import Initiate from './routes/Initiate/Initiate';
-import Session from './routes/Session';
+import Session from './routes/Session/Session';
 import Review from './routes/Review';
-import History from './routes/History';
-import Contact from './routes/Contact';
+import History from './routes/History/History';
+import Contact from './routes/Contact/Contact';
 import Title from './components/Title/Title';
+// import { useNavigate } from 'react-router-dom'
 
 // This is for testing
 // import { Link } from 'react-router-dom'
 
 function App() {
+
+//   const navigate = useNavigate();
+
+//   const contactClick = function() {
+//     navigate('/Contact')
+// }
+
+// const loginClick = function() {
+//     navigate('/')
+// }
 
   return (
     <div className="App">
@@ -37,6 +48,10 @@ function App() {
           <Route path='/contact' element={<Contact/>}/>
         </Routes>
       </main>
+      {/* <footer>
+            <button onClick={contactClick}>Contact</button><br></br>
+            <button onClick={loginClick}>Log Out</button>
+      </footer> */}
     </div>
   );
 }

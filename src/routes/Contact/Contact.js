@@ -1,4 +1,4 @@
-import '../App.css'
+import './Contact.css'
 import { useNavigate } from 'react-router-dom'
 
 function Contact() {
@@ -21,10 +21,12 @@ function Contact() {
                 <input type="email" placeholder="Email" name='email'></input><br></br><br></br>
                 <input type="hidden" name="_next" value="http://localhost:3000/Initiate"></input>
                 <textarea placeholder="Your Message" type="text" rows="10" name="comments"></textarea><br></br>
-                <button type='submit'>Send (This may take a moment)</button>
+                <p id='loading-text'>This may take a moment!</p>
+                <button id='send-button' type='submit'>Send</button>
+
             </form><br></br>
-            <button onClick={initiateClick}>Home</button>
-            <button onClick={loginClick}>Logout</button>
+            <button id='home-button' onClick={initiateClick}>Home</button>
+            <button id='logout-button' onClick={loginClick}>Logout</button>
         </>
     )
 }

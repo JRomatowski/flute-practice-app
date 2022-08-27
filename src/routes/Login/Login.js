@@ -18,7 +18,7 @@ function Login() {
                     <div className='login-form-container'>
                         <input type="email" className="email" placeholder="Email" name='email'></input><br></br><br></br>
                         <input type="password" className="password" placeholder="Password" name="password"></input><br></br><br></br>
-                        <button onClick={initiateClick}>Login</button>
+                        <button id='login-button' onClick={initiateClick}>Login</button>
                     </div><br></br>
         </div>
         </>

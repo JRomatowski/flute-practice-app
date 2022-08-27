@@ -1,0 +1,33 @@
+#home-button {
+    height: 150px;
+    width: 150px;
+    border: white;
+    background-image: linear-gradient(to bottom, white, #12FFB1);
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+}
+
+#home-button-history-top {
+    height: 30px;
+    width: 150px;
+    border-radius: 50px;
+    border: white;
+    background-image: linear-gradient(to bottom, white, #12FFB1);
+    margin-bottom: 20px
+}
+
+#logout-button {
+    height: 150px;
+    width: 150px;
+    border: white;
+    color: white;
+    background-image: linear-gradient(to left, #8150b7, #231557);
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+}
+
+#contact-button {
+    height: 150px;
+    width: 150px;
+    border: white;
+    background-image: linear-gradient(to left, #fff800, #ff1361);
+    clip-path: polygon(0 25%, 100% 26%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
+}

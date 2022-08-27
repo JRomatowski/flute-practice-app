@@ -9,12 +9,12 @@
   padding-bottom: 200px;
 }
 
-.main {
+/* .main {
   border: rgb(254, 238, 238) solid 2px;
   max-width: 500px;
   padding: 10px;
   box-shadow: 10px 5px 5px #231557;
-}
+} */
 
 .history-list {
   overflow: auto;

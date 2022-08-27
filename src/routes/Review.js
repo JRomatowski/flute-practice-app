@@ -42,7 +42,6 @@ function Review() {
 
     return(
         <>  
-            <h3>Review Component</h3>
             <div className='review-container'>
                 <h4>Summary of Session</h4>
                 <p>Length: {sessionHistory.length} minutes</p>

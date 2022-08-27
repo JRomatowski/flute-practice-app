@@ -1,0 +1,15 @@
+#home-button {
+    height: 150px;
+    width: 150px;
+    border: white;
+    background-image: linear-gradient(to bottom, white, #12FFB1);
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+}
+
+#review-button-session {
+    height: 200px;
+    width: 200px;
+    border: white;
+    background-image: linear-gradient(to left, #fff800, #ff1361);
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+}

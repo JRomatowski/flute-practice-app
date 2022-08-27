@@ -1,4 +1,4 @@
-import '../App.css'
+import './Session.css'
 import { useNavigate } from 'react-router-dom'
 import { useState,} from 'react'
 import axios from 'axios';
@@ -26,13 +26,13 @@ function Session() {
         navigate('/Review')
     }
 
-    const contactClick = function() {
-        navigate('/Contact')
-    }
+    // const contactClick = function() {
+    //     navigate('/Contact')
+    // }
 
-    const loginClick = function() {
-        navigate('/')
-    }
+    // const loginClick = function() {
+    //     navigate('/')
+    // }
 
     return(
         <>  
@@ -40,12 +40,11 @@ function Session() {
             <form onSubmit={reviewClick}>
                 <div>Length of session?</div><br></br>
                 <input type='number' onChange={handleChange}/><br></br><br></br>
-                <button type="submit">Review</button>
-            </form><br></br><br></br>
-
-            <button onClick={initiateClick}>Back</button><br></br>
-            <button onClick={contactClick}>Contact</button><br></br>
-            <button onClick={loginClick}>Log Out</button>
+                <button id='review-button-session' type="submit">Review</button>
+            </form>
+            <button id='home-button' onClick={initiateClick}>Back</button><br></br>
+            {/* <button onClick={contactClick}>Contact</button><br></br> */}
+            {/* <button onClick={loginClick}>Log Out</button> */}
         </>
     )
 }

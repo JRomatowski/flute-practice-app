@@ -1,9 +1,9 @@
-import '../App.css'
+import './History.css'
 import { useNavigate } from 'react-router-dom'
 import axios from 'axios'
 import { useEffect, useState } from 'react';
-import Chart1 from '../components/Chart1';
-import HistoryStats from '../components/HistoryStats';
+import Chart1 from '../../components/Chart1';
+import HistoryStats from '../../components/HistoryStats';
 
 function History() {
 
@@ -33,13 +33,14 @@ function History() {
 
     return(
         <>  
+            <button id='home-button-history-top' onClick={initiateClick}>Go Home</button><br></br>
             <h3>Stats for {user}</h3>
-            <button onClick={initiateClick}>Go Home</button><br></br>
             <Chart1 /><br></br>
             <HistoryStats /><br></br>
-            <button onClick={initiateClick}>Go Home</button><br></br>
-            <button onClick={contactClick}>Contact</button><br></br>
-            <button onClick={loginClick}>Log Out</button>
+            <button id='home-button' onClick={initiateClick}>Go Home</button>
+            <button id='logout-button' onClick={loginClick}>Log Out</button><br></br>
+            <button id='contact-button' onClick={contactClick}>Contact</button>
+
         </>
     )
 }
