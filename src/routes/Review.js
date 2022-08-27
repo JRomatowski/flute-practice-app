@@ -2,8 +2,8 @@ import '../App.css'
 import { useNavigate } from 'react-router-dom'
 import {useState, useEffect} from 'react'
 import axios from 'axios'
-import Chart1 from './Chart1'
-import HistoryStatsNoModify from './HistoryStatsNoModify'
+import Chart1 from '../components/Chart1'
+import HistoryStatsNoModify from '../components/HistoryStatsNoModify'
 
 function Review() {
 

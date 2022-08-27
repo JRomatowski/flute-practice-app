@@ -1,0 +1,8 @@
+.login-container {
+    /* border: 10px red solid; */
+    /* background-image: linear-gradient(white, rgb(224, 241, 241), rgb(194, 116, 161)); */
+    background-color: rgb(228, 254, 246);
+    border-radius: 20px;
+    padding: 20px;
+    margin: 20px
+}

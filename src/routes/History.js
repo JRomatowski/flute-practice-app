@@ -2,8 +2,8 @@ import '../App.css'
 import { useNavigate } from 'react-router-dom'
 import axios from 'axios'
 import { useEffect, useState } from 'react';
-import Chart1 from './Chart1';
-import HistoryStats from './HistoryStats';
+import Chart1 from '../components/Chart1';
+import HistoryStats from '../components/HistoryStats';
 
 function History() {
 

@@ -35,8 +35,8 @@ const Chart1 = () => {
                 datasets: [
                     {
                         label: 'Practice Amount',
-                        backgroundColor: 'rgba(194, 116, 161, 0.5)',
-                        borderColor: 'rgb(194, 116, 161)',
+                        backgroundColor: '#ff1361',
+                        borderColor: '#ff1361',
                         data: graphHistory
                     },
                 ],

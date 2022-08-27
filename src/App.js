@@ -1,12 +1,12 @@
 import { Routes, Route } from 'react-router-dom'
 import './App.css';
-import Login from "./components/Login";
-import Initiate from './components/Initiate';
-import Session from './components/Session';
-import Review from './components/Review';
-import History from './components/History';
-import Contact from './components/Contact';
-import Title from './components/Title';
+import Login from "./routes/Login/Login";
+import Initiate from './routes/Initiate/Initiate';
+import Session from './routes/Session';
+import Review from './routes/Review';
+import History from './routes/History';
+import Contact from './routes/Contact';
+import Title from './components/Title/Title';
 
 // This is for testing
 // import { Link } from 'react-router-dom'
@@ -27,7 +27,7 @@ function App() {
       <h1 className='header'>
         <Title />
       </h1>
-      <main>
+      <main className='main'>
         <Routes>
           <Route path='/' element={<Login/>}/>
           <Route path='/initiate' element={<Initiate/>}/>

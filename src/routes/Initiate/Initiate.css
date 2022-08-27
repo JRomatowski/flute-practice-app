@@ -1,0 +1,57 @@
+/* .initiate-container {
+    border: rgb(254, 238, 238) solid 2px;
+    max-width: 500px;
+    padding: 10px;
+    box-shadow: 10px 5px 5px #231557;
+} */
+
+#practice-button {
+    height: 180px;
+    width: 180px;
+    border: white;
+    /* background-color: #44107a; */
+    background-image: linear-gradient(to bottom right, #8150b7, #231557);
+    
+    clip-path: polygon(0% 20%, 60% 20%, 60% 0%, 100% 50%, 60% 100%, 60% 80%, 0% 80%);
+
+
+    color: white;
+
+    -moz-transform: scale(1) rotate(0deg) translate(0px, 0px) skew(350deg, 0deg);
+    -webkit-transform: scale(1) rotate(0deg) translate(0px, 0px) skew(350deg, 0deg);
+    -o-transform: scale(1) rotate(0deg) translate(0px, 0px) skew(350deg, 0deg);
+    -ms-transform: scale(1) rotate(0deg) translate(0px, 0px) skew(350deg, 0deg);
+    transform: scale(1) rotate(0deg) translate(0px, 0px) skew(350deg, 0deg);
+}
+
+#history-button {
+    height: 150px;
+    width: 150px;
+    border: white;
+    clip-path: polygon(40% 0%, 40% 20%, 100% 20%, 100% 80%, 40% 80%, 40% 100%, 0% 50%);
+    background-image: linear-gradient(to left, #fff800, #ff1361);
+
+    -moz-transform: scale(1) rotate(0deg) translate(0px, 0px) skew(350deg, 0deg);
+    -webkit-transform: scale(1) rotate(0deg) translate(0px, 0px) skew(350deg, 0deg);
+    -o-transform: scale(1) rotate(0deg) translate(0px, 0px) skew(350deg, 0deg);
+    -ms-transform: scale(1) rotate(0deg) translate(0px, 0px) skew(350deg, 0deg);
+    transform: scale(1) rotate(0deg) translate(0px, 0px) skew(350deg, 0deg);
+    
+}
+
+#contact-button {
+    height: 150px;
+    width: 150px;
+    border: white;
+    background-image: linear-gradient(to bottom, white, #12FFB1);
+    clip-path: polygon(0 25%, 100% 26%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
+}
+
+#logout-button {
+    height: 150px;
+    width: 150px;
+    border: white;
+    color: white;
+    background-image: linear-gradient(to left, #8150b7, #231557);
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+}
