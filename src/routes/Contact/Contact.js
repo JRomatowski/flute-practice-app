@@ -15,7 +15,7 @@ function Contact() {
 
     return(
         <>  
-            <h3>Contact Us!</h3>
+            <h3>Email me!</h3>
             <form className='contact-form' action="https://formsubmit.co/joshuaromatowski@gmail.com" method="POST" >
                 <input type="text" placeholder="Name" name='name'></input><br></br><br></br>
                 <input type="email" placeholder="Email" name='email'></input><br></br><br></br>

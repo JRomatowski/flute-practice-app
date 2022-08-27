@@ -3,7 +3,7 @@ import './App.css';
 import Login from "./routes/Login/Login";
 import Initiate from './routes/Initiate/Initiate';
 import Session from './routes/Session/Session';
-import Review from './routes/Review';
+import Review from './routes/Review/Review';
 import History from './routes/History/History';
 import Contact from './routes/Contact/Contact';
 import Title from './components/Title/Title';

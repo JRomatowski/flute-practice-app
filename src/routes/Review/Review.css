@@ -1,0 +1,36 @@
+.buttons-review {
+    height:100px;
+    width:100px;
+    border: white;
+    clip-path: circle(50% at 50% 50%);
+}
+
+#review-button-container {
+    margin-bottom: 10px;
+}
+
+/* #44107a 29%,
+#ff1361 67%,
+#fff800  */
+
+#submit-review {
+    /* background-image: linear-gradient(to right, #ff1361, #fff800);
+    color: white; */
+    background-color: #fff800;
+
+}
+
+#edit-review {
+    background-color: #fff800;
+    background-image: linear-gradient(to right, #ff1361, #fff800);
+    color: white;
+    height:75px;
+    width:75px;
+}
+
+#delete-review {
+    background-image: linear-gradient(to right, #fff800, #44107a);
+    color: white;
+    height:75px;
+    width:75px;
+}

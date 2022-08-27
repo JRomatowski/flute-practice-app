@@ -1,9 +1,9 @@
-import '../App.css'
+import './Review.css'
 import { useNavigate } from 'react-router-dom'
 import {useState, useEffect} from 'react'
 import axios from 'axios'
-import Chart1 from '../components/Chart1'
-import HistoryStatsNoModify from '../components/HistoryStatsNoModify'
+import Chart1 from '../../components/Chart1'
+import HistoryStatsNoModify from '../../components/HistoryStatsNoModify'
 
 function Review() {
 
@@ -45,10 +45,12 @@ function Review() {
             <div className='review-container'>
                 <h4>Summary of Session</h4>
                 <p>Length: {sessionHistory.length} minutes</p>
-                <button onClick={initiateClick}>Submit/Return Home</button><br></br><br></br>
-                {/* <button>Share via Email</button><br></br><br></br> */}
-                <button onClick={sessionClick}>Edit</button><br></br><br></br>
-                <button onClick={deleteClick}>Delete/Return Home</button><br></br><br></br>
+                <div id='review-button-container'>
+                    <button className='buttons-review' id='edit-review' onClick={sessionClick}>Edit</button>
+                    <button className='buttons-review' id='submit-review' onClick={initiateClick}>Submit</button>
+                    {/* <button>Share via Email</button><br></br><br></br> */}
+                    <button className='buttons-review' id='delete-review' onClick={deleteClick}>Delete</button>
+                </div>
                 <h4>Current Chart</h4>
                 <Chart1 /><br></br>
                 <HistoryStatsNoModify />

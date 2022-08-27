@@ -37,7 +37,7 @@ function HistoryStats() {
     return(
         <>  
             <h2>Average Time: {averageTime} minutes per session!</h2><br></br>
-            <h3>Practice History (text)</h3><br></br>
+            <h3>Practice History</h3><br></br>
             <div className='history-list'>
                 {sessionHistory.map((historyThing, index) => (
                     <div key={index}>
