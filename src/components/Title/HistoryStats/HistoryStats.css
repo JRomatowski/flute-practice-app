@@ -1,0 +1,24 @@
+.history-list-modify {
+    display:flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+}
+
+.history-span {
+    margin-right: 20px;
+
+}
+
+.history-delete-button {
+    height: 30px;
+    width: 30px;
+    border: white;
+    border-radius: 50px;
+
+}
+
+.history-span-container {
+    margin: 10px;
+    padding-bottom: 15px;
+    border-bottom: 1px black dotted;
+}

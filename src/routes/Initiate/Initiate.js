@@ -1,5 +1,7 @@
 import './Initiate.css'
 import { useNavigate } from 'react-router-dom'
+import { Chart } from 'react-chartjs-2';
+import Chart1 from '../../components/Chart1';
 
 function Initiate() {
 

@@ -1,8 +1,8 @@
-import '../App.css'
+import './HistoryStats.css'
 import axios from 'axios'
 import { useEffect, useState } from 'react';
 
-function HistoryStats() {
+function HistoryStatsNoModify() {
 
     const [sessionHistory, setSessionHistory] = useState([])
     const [averageTime, setAverageTime] = useState('')
@@ -26,13 +26,7 @@ function HistoryStats() {
                 let averagePracticeAmountDisplay = averagePracticeAmountFloat.toFixed(1)
                 setAverageTime(averagePracticeAmountDisplay)                
             })
-    }, [sessionHistory])
-
-    const deleteOneClick = function(event) {
-        alert("Are you sure?")
-        let idToDelete = event.target.getAttribute('id')
-        axios.delete(`http://127.0.0.1:8000/history/${idToDelete}`, idToDelete)
-    }
+    }, [])
 
     return(
         <>  
@@ -42,10 +36,6 @@ function HistoryStats() {
                 {sessionHistory.map((historyThing, index) => (
                     <div key={index}>
                         <p key={index}>{historyThing.date}: You practiced for {historyThing.length} minutes.</p>
-                        <span>
-                            {/* <button id={historyThing.id}>edit</button> */}
-                            <button onClick={deleteOneClick} id={historyThing.id}>delete</button>
-                        </span>
                     </div>
                 ))}
             </div>
@@ -53,4 +43,4 @@ function HistoryStats() {
     )
 }
 
-export default HistoryStats
+export default HistoryStatsNoModify

@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom'
 import axios from 'axios'
 import { useEffect, useState } from 'react';
 import Chart1 from '../../components/Chart1';
-import HistoryStats from '../../components/HistoryStats';
+import HistoryStats from '../../components/Title/HistoryStats/HistoryStats';
 
 function History() {
 

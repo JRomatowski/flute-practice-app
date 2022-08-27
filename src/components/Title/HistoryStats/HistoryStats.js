@@ -1,8 +1,8 @@
-import '../App.css'
+import './HistoryStats.css'
 import axios from 'axios'
 import { useEffect, useState } from 'react';
 
-function HistoryStatsNoModify() {
+function HistoryStats() {
 
     const [sessionHistory, setSessionHistory] = useState([])
     const [averageTime, setAverageTime] = useState('')
@@ -26,16 +26,27 @@ function HistoryStatsNoModify() {
                 let averagePracticeAmountDisplay = averagePracticeAmountFloat.toFixed(1)
                 setAverageTime(averagePracticeAmountDisplay)                
             })
-    }, [])
+    }, [sessionHistory])
+
+    const deleteOneClick = function(event) {
+        alert("Are you sure?")
+        let idToDelete = event.target.getAttribute('id')
+        axios.delete(`http://127.0.0.1:8000/history/${idToDelete}`, idToDelete)
+    }
 
     return(
         <>  
             <h2>Average Time: {averageTime} minutes per session!</h2><br></br>
             <h3>Practice History</h3><br></br>
-            <div className='history-list'>
+            <div className='history-list-modify'>
                 {sessionHistory.map((historyThing, index) => (
-                    <div key={index}>
-                        <p key={index}>{historyThing.date}: You practiced for {historyThing.length} minutes.</p>
+                    <div className='history-span-container' key={index}>
+                        <span className='history-span' key={index}>{historyThing.date}: You practiced for {historyThing.length} minutes.</span>
+                        <button className='history-delete-button' onClick={deleteOneClick} id={historyThing.id}>X</button>
+                        <span>
+                            {/* <button id={historyThing.id}>edit</button> */}
+
+                        </span>
                     </div>
                 ))}
             </div>
@@ -43,4 +54,4 @@ function HistoryStatsNoModify() {
     )
 }
 
-export default HistoryStatsNoModify
+export default HistoryStats
