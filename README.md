@@ -77,7 +77,7 @@ This website is designed to belike the RP Diet App, Fitbit, or MyFitnessPal but 
 - Re Host backend
 - Connect front end to back end with new live heroku link
 
-## v.6.5 - (Practice Journal - Presentation)
+## v.5.5 - (Practice Journal - Presentation)
 
 - Prep class presentation
 
