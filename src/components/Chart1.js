@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Line } from 'react-chartjs-2';
 import { CDBContainer } from 'cdbreact';
+// eslint-disable-next-line
 import { Chart as ChartJS } from 'chart.js/auto'
 // import { Chart } from 'react-chartjs-2'
 import axios from 'axios'
@@ -12,7 +13,8 @@ const Chart1 = () => {
     const [dateHistory, setDateHistory] = useState([])
 
     useEffect(() => {
-        axios.get('http://127.0.0.1:8000/history')
+        // axios.get('http://127.0.0.1:8000/history')
+        axios.get('https://flute-practice-app.herokuapp.com/history/')
             .then(res => {
                 let data = res.data.practice_sessions
                 setSessionHistory(data)

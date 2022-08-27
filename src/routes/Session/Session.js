@@ -7,6 +7,7 @@ function Session() {
 
     const initialState = { length: ''}
     const [formState, setFormState] = useState(initialState)
+    // eslint-disable-next-line
     const [defaultValue, setDefaultValue] = useState(0)
 
     const navigate = useNavigate();
@@ -23,7 +24,8 @@ function Session() {
     const reviewClick = function(event) {
         event.preventDefault()
         let newSession = {"practice_sessions": [formState]}
-        axios.post('http://127.0.0.1:8000/history/', newSession)
+        // axios.post('http://127.0.0.1:8000/history/', newSession)
+        axios.post('https://flute-practice-app.herokuapp.com/history/', newSession)
         navigate('/Review')
     }
 

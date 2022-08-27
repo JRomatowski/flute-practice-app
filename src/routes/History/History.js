@@ -3,14 +3,15 @@ import { useNavigate } from 'react-router-dom'
 import axios from 'axios'
 import { useEffect, useState } from 'react';
 import Chart1 from '../../components/Chart1';
-import HistoryStats from '../../components/Title/HistoryStats/HistoryStats';
+import HistoryStats from '../../components/HistoryStats/HistoryStats';
 
 function History() {
 
     const [user, setUser] = useState('')
 
     useEffect(() => {
-        axios.get('http://127.0.0.1:8000/performers')
+        // axios.get('http://127.0.0.1:8000/performers')
+        axios.get('https://flute-practice-app.herokuapp.com/performers/')
             .then(res => {
                 let name = res.data.performers[0].name
                 setUser(name)
