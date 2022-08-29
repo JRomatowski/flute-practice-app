@@ -36,7 +36,7 @@ function History() {
         <>  
             <div className='component-container'>
                 <button id='home-button-history-top' onClick={initiateClick}>Go Home</button><br></br>
-                <h3>Stats for {user}</h3>
+                <h3 className='user-acknowledge'>Stats for {user}</h3>
                 <Chart1 /><br></br>
                 <HistoryStats /><br></br>
                 <button id='home-button' onClick={initiateClick}>Go Home</button>

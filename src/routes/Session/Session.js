@@ -34,8 +34,8 @@ function Session() {
             <div className = 'component-container'>
                 <h3>Input your session!</h3>
                 <form onSubmit={reviewClick}>
-                    <div>Length of session?</div><br></br>
-                    <input type='number' min={defaultValue} onChange={handleChange}/><br></br><br></br>
+                    <div>Length of session in minutes?</div><br></br>
+                    <input type='number' min={defaultValue} onChange={handleChange} placeholder='# of Minutes'/><br></br><br></br>
                     <button id='review-button-session' type="submit">Review</button>
                 </form>
                 <button id='home-button' onClick={initiateClick}>Back</button><br></br>

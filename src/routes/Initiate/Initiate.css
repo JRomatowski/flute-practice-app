@@ -55,3 +55,7 @@
     background-image: linear-gradient(to left, #8150b7, #231557);
     clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
 }
+
+.user-acknowledge {
+    margin:10px;
+}
