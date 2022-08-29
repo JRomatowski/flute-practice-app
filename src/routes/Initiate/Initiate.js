@@ -23,7 +23,7 @@ function Initiate() {
 
     return(
         <>  
-            <div className='initiate-container'>
+            <div className='initiate-container component-container'>
                 <button id='practice-button' onClick={sessionClick}>Practice!</button><br></br><br></br>
                 <button id='history-button' onClick={historyClick}>History</button><br></br><br></br>
                 <button id='contact-button-initiate' onClick={contactClick}>Contact</button><br></br><br></br>
