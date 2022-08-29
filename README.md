@@ -2,7 +2,7 @@
 
 # Project Description:
 
-This website is designed to belike the RP Diet App, Fitbit, or MyFitnessPal but for instrumental practice.  Track practice frequency, length, etc and display it in cool graphs to keep people motivated.
+This website is designed to be like the RP Diet App, Fitbit, or MyFitnessPal but for instrumental practice.  Track practice frequency, length, etc and display it in cool graphs to keep people motivated.
 
 # Live Deploy Link:
 
