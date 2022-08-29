@@ -20,7 +20,8 @@ function Contact() {
                 <form className='contact-form' action="https://formsubmit.co/joshuaromatowski@gmail.com" method="POST" >
                     <input type="text" placeholder="Name" name='name'></input><br></br><br></br>
                     <input type="email" placeholder="Email" name='email'></input><br></br><br></br>
-                    <input type="hidden" name="_next" value="http://localhost:3000/Initiate"></input>
+                    {/* <input type="hidden" name="_next" value="http://localhost:3000/Initiate"></input> */}
+                    <input type="hidden" name="_next" value="https://flute-tracker.netlify.app/Initiate"></input>
                     <textarea placeholder="Your Message" type="text" rows="10" name="comments"></textarea><br></br>
                     <p id='loading-text'>This may take a moment!</p>
                     <button id='send-button' type='submit'>Send</button>
