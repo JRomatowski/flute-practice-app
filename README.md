@@ -103,11 +103,7 @@ This website is designed to be like the RP Diet App, Fitbit, or MyFitnessPal but
 
 - Prep class presentation
 
----
-
 ## Presentation 
-
---- 
 
 ### v.6 (Practice Journal - User Authentication)
 
@@ -150,11 +146,7 @@ This website is designed to be like the RP Diet App, Fitbit, or MyFitnessPal but
 - Styling upgrade 2
 - Final polish
 
----
-
 ## v1.0 (Practice Journal - COMPLETE)
-
----
 
 ### v1.1 (Teaching Tool - First Student Update)
 
@@ -199,8 +191,6 @@ This website is designed to be like the RP Diet App, Fitbit, or MyFitnessPal but
 
 ### v2.0 (Teaching Tool)
 
-<br>
-
 # Final Version Models
 
 model Performer<br/>
@@ -243,7 +233,6 @@ model Lesson<br/>
 model Student_Input<br/>
 - Practiced? (T/F)
 - What did you practice? (Text Field)
-<br>
 
 # Stretch/Ideas:
 - Payment History 
