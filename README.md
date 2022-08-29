@@ -1,8 +1,25 @@
+# FluteTracker
+
 # Project Description:
 
 This website is designed to belike the RP Diet App, Fitbit, or MyFitnessPal but for instrumental practice.  Track practice frequency, length, etc and display it in cool graphs to keep people motivated.
 
+# Live Deploy Link:
+
+- Frontend: https://flute-tracker.netlify.app/
+- Backend: https://flute-practice-app.herokuapp.com/
+
+# Screenshots of Website:
+
+<img src='./ft-login.png' height=400px width=300px>
+<img src='./ft-initiate.png' height=400px width=300px>
+<img src='./ft-session.png' height=400px width=300px>
+<img src='./ft-review.png' height=400px width=300px>
+<img src='./ft-history.png' height=400px width=300px>
+<img src='./ft-contact.png' height=400px width=300px>
+
 # Tech Stack:
+
 - Frontend - React.js
 - Backend - Django/Python
 - Database - postgresql
@@ -28,11 +45,16 @@ This website is designed to belike the RP Diet App, Fitbit, or MyFitnessPal but 
 
 # Wireframe
 
-- https://miro.com/app/board/uXjVPcjc31o=/?share_link_id=335800240099
+- https://miro.com/app/board/uXjVPcjc31o=/?share_link_id=335800250099
+
+# Contact
+
+- Please email this address with any comments, questions, or concerns!
+	- joshuaromatowski@gmail.com
 
 # Roadmap
 
-## v.1 (Practice Journal - Performer and Practice_session model, CRUD, Host Backend)
+### v.1 (Practice Journal - Performer and Practice_session model, CRUD, Host Backend)
 
 - Create model Performer
 	- Name
@@ -46,7 +68,7 @@ This website is designed to belike the RP Diet App, Fitbit, or MyFitnessPal but 
     - Be able to remove submissions
 - Host backend on Heroku
 
-## v.2 (Practice Journal - Frontend Basic Design)
+### v.2 (Practice Journal - Frontend Basic Design)
 
 - Basic Styling for functionality
     - Login Page Placeholder
@@ -56,7 +78,7 @@ This website is designed to belike the RP Diet App, Fitbit, or MyFitnessPal but 
     - History page with session history placeholder 
 
 
-## v.3 (Practice Journal - React CRUD)
+### v.3 (Practice Journal - React CRUD)
 
 - Get CRUD working with frontend
     - Be able to save practice data for graph 
@@ -66,28 +88,32 @@ This website is designed to belike the RP Diet App, Fitbit, or MyFitnessPal but 
 
 - Display data in history page as a list
 
-## v.4 - (Practice Journal - Graph Update and Styling Upgrade 1)
+### v.4 (Practice Journal - Graph Update and Styling Upgrade 1)
 
 - Make the data display in any chart at all
 - Do a round of restyling.  Get acquainted with bootstrap
 
-## v.5 - MVP (Practice Journal - Hosting and connecting)
+### v.5 MVP (Practice Journal - Hosting and connecting)
 
 - Host frontend on Netlify
 - Re Host backend
 - Connect front end to back end with new live heroku link
 
-## v.5.5 - (Practice Journal - Presentation)
+### v.5.5 (Practice Journal - Presentation)
 
 - Prep class presentation
 
-# Presentation
+---
 
-## v.6 - (Practice Journal - User Authentication)
+## Presentation 
+
+--- 
+
+### v.6 (Practice Journal - User Authentication)
 
 - Incorporate user authentication
 
-## v.7 (Practice Journal - Model upgrade: Instruments and Practice Types)
+### v.7 (Practice Journal - Model upgrade: Instruments and Practice Types)
 
 - Update model Practice_session
 	- Instrument (Flute, Piccolo, Baroque Flute, Classical Flute)
@@ -100,7 +126,7 @@ This website is designed to belike the RP Diet App, Fitbit, or MyFitnessPal but 
 - Front end to accomodate updated model.
 - Update displays to show new model data.
 
-## v.8 (Practice Journal - Model Upgrade: Final Additions)
+### v.8 (Practice Journal - Model Upgrade: Final Additions)
 
 - update model Practice_session
 	- Warmup Type (Dropdown)
@@ -113,20 +139,24 @@ This website is designed to belike the RP Diet App, Fitbit, or MyFitnessPal but 
 - Front end to accomodate updated model
 - Update displays to show new model data
 
-## v.9 (Practice Journal - User Feedback)
+### v.9 (Practice Journal - User Feedback)
 
 - Quick polish
 - Show to colleagues and get user feedback (2-3 weeks)
 
-## v.9.5 (Practice Journal - Implement feedback, Styling Upgrade 2)
+### v.9.5 (Practice Journal - Implement feedback, Styling Upgrade 2)
 
 - Implement feedback
 - Styling upgrade 2
 - Final polish
 
-# v1.0 (Practice Journal - COMPLETE)
+---
 
-## v1.1 (Teaching Tool - First Student Update)
+## v1.0 (Practice Journal - COMPLETE)
+
+---
+
+### v1.1 (Teaching Tool - First Student Update)
 
 - Create model Student
 	- Name
@@ -144,13 +174,13 @@ This website is designed to belike the RP Diet App, Fitbit, or MyFitnessPal but 
 	- Days Practiced Since Last Lessons
 	- Notes
 
-## v1.2 (Teaching Tool - Share Function and live testing)
+### v1.2 (Teaching Tool - Share Function and live testing)
 
 - Allow for email sharing with click of button.  This way I can email parents a lesson summary each week.  
 - Streamline user experience to make this who process fast.
 - Test this and update for 3-6 weeks to iron out problems.
 
-## v1.3 (Teaching Tool - Closed Beta)
+### v1.3 (Teaching Tool - Closed Beta)
 
 - Create model Student_Input
 	- Practiced? T/F
@@ -158,16 +188,18 @@ This website is designed to belike the RP Diet App, Fitbit, or MyFitnessPal but 
 - Login page on my website for students to input data throughout week
 - Closed Beta for student feedback
 
-## v1.4 (Teaching Tool - Student Experience Update based on feedback)
+### v1.4 (Teaching Tool - Student Experience Update based on feedback)
 
 - Implement student feedback
 
-## v1.5 (Teaching Tool - Database of useful resources)
+### v1.5 (Teaching Tool - Database of useful resources)
 
 - Populate a DB of potential etudes, scales, exercises choices, long tone routines
 - Let students see DB's and choose what to do.
 
-## v2.0 (Teaching Tool)
+### v2.0 (Teaching Tool)
+
+<br>
 
 # Final Version Models
 
@@ -211,6 +243,7 @@ model Lesson<br/>
 model Student_Input<br/>
 - Practiced? (T/F)
 - What did you practice? (Text Field)
+<br>
 
 # Stretch/Ideas:
 - Payment History 
