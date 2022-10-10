@@ -40,7 +40,8 @@ function History() {
                 <Chart1 /><br></br>
                 <HistoryStats /><br></br>
                 <button id='home-button' onClick={initiateClick}>Go Home</button>
-                <button id='logout-button' onClick={loginClick}>Log Out</button><br></br>
+                {/* <button id='logout-button' onClick={loginClick}>Log Out</button><br></br> */}
+                <button id='logout-button' onClick={loginClick}>Exit</button><br></br>
                 <button id='contact-button' onClick={contactClick}>Contact</button>
             </div>
         </>

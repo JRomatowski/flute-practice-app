@@ -28,7 +28,8 @@ function Contact() {
 
                 </form><br></br>
                 <button id='home-button' onClick={initiateClick}>Home</button>
-                <button id='logout-button' onClick={loginClick}>Logout</button>
+                {/* <button id='logout-button' onClick={loginClick}>Logout</button> */}
+                <button id='logout-button' onClick={loginClick}>Exit</button>
             </div>
         </>
     )
