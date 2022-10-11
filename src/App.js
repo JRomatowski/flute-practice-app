@@ -7,6 +7,7 @@ import Review from './routes/Review/Review';
 import History from './routes/History/History';
 import Contact from './routes/Contact/Contact';
 import Title from './components/Title/Title';
+import Edit from './routes/Edit';
 // import { useNavigate } from 'react-router-dom'
 
 // This is for testing
@@ -46,6 +47,7 @@ function App() {
           <Route path='/review' element={<Review/>}/>
           <Route path='/history' element={<History/>}/>
           <Route path='/contact' element={<Contact/>}/>
+          <Route path='/edit' element={<Edit/>}/>
         </Routes>
       </main>
       {/* <footer>

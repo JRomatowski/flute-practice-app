@@ -18,7 +18,7 @@ function Session() {
 
     const handleChange = function(event) {
         setFormState({length: event.target.value})
-        // console.log(formState)
+        console.log(formState)
     }
 
     const reviewClick = function(event) {
