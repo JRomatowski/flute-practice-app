@@ -9,11 +9,9 @@ function HistoryStats() {
     const [sessionHistory, setSessionHistory] = useState([])
     const [averageTime, setAverageTime] = useState('')
 
-    const navigate = useNavigate();
-
     useEffect(() => {
-        // axios.get('http://127.0.0.1:8000/history')
-        axios.get('https://flute-practice-app.herokuapp.com/history/')
+        axios.get('http://127.0.0.1:8000/history')
+        // axios.get('https://flute-practice-app.herokuapp.com/history/')
             .then(res => {
                 let data = res.data.practice_sessions
 
@@ -41,8 +39,12 @@ function HistoryStats() {
     //     axios.delete(`https://flute-practice-app.herokuapp.com/history/${idToDelete}`, idToDelete);
     // }
 
-    const editClick = function() {
-        navigate('/Edit')
+    const navigate = useNavigate();
+
+    const editClick = function(event) {
+        let idToEdit = event.target.getAttribute('id')
+        console.log(idToEdit)
+        navigate('/Edit', {state: {idToEdit}})
     }
 
     return(
@@ -53,7 +55,7 @@ function HistoryStats() {
                 {sessionHistory.map((historyThing, index) => (
                     <div className='history-span-container' key={index}>
                         <span className='history-span' key={index}>{historyThing.date}: You practiced for {historyThing.length} minutes.</span>
-                        <button className='history-delete-button' onClick={editClick} id={historyThing.id}>X</button>
+                        <button className='history-delete-button' onClick={editClick} id={historyThing.id}>Edit</button>
                         <span>
                             {/* <button id={historyThing.id}>edit</button> */}
 
