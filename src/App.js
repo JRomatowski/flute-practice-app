@@ -47,7 +47,7 @@ function App() {
           <Route path='/review' element={<Review/>}/>
           <Route path='/history' element={<History/>}/>
           <Route path='/contact' element={<Contact/>}/>
-          <Route path='/edit' element={<Edit/>}/>
+          <Route path='/history/edit' element={<Edit/>}/>
         </Routes>
       </main>
       {/* <footer>

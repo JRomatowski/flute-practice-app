@@ -40,10 +40,10 @@ function Edit() {
 
     const editClick = function(event) {
         event.preventDefault()
-        let newLength = {"practice_sessions": [formState]}
-        console.log(newLength)
-        // Need request, session_id, newLength
-        axios.patch(`http://127.0.0.1:8000/history/edit/${idToEdit}/`, idToEdit, newLength)
+        let newLengthArray = formState
+        let newLengthAmount = newLengthArray.length
+        axios.patch(`http://127.0.0.1:8000/history/edit/${idToEdit}/${newLengthAmount}/`,idToEdit,newLengthAmount)
+        navigate('/History')
     }
 
     // console.log(idToEdit)

@@ -43,7 +43,7 @@ function HistoryStats() {
     const editClick = function(event) {
         let idToEdit = event.target.getAttribute('id')
         // console.log(idToEdit)
-        navigate('/Edit', {state: {idToEdit}})
+        navigate('/History/Edit', {state: {idToEdit}})
     }
 
     return(
@@ -53,7 +53,7 @@ function HistoryStats() {
             <div className='history-list-modify'>
                 {sessionHistory.map((historyThing, index) => (
                     <div className='history-span-container' key={index}>
-                        <span className='history-span' key={index}>{historyThing.date}: You practiced for {historyThing.length} minutes.</span>
+                        <span className='history-span' key={index}>{historyThing.date}: You practiced for {historyThing.length} minutes. This is ID {historyThing.id}</span>
                         <button className='history-delete-button' onClick={editClick} id={historyThing.id}>Edit</button>
                         <span>
                             {/* <button id={historyThing.id}>edit</button> */}
