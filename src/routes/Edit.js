@@ -8,7 +8,10 @@ import axios from 'axios';
 
 function Edit() {
 
-    // let dataToEdit = ''
+    const initialState = { length: ''}
+    const [formState, setFormState] = useState(initialState)
+    // eslint-disable-next-line
+    const [defaultValue, setDefaultValue] = useState(0)
 
     const [dataToEdit, setDataToEdit] = useState('')
     const {state} = useLocation();
@@ -30,6 +33,19 @@ function Edit() {
         navigate('/History')
     }
 
+    const handleChange = function(event) {
+        setFormState({length: event.target.value})
+        // console.log(formState)
+    }
+
+    const editClick = function(event) {
+        event.preventDefault()
+        let newLength = {"practice_sessions": [formState]}
+        console.log(newLength)
+        // Need request, session_id, newLength
+        axios.patch(`http://127.0.0.1:8000/history/edit/${idToEdit}/`, idToEdit, newLength)
+    }
+
     // console.log(idToEdit)
     // console.log(dataToEdit)
 
@@ -39,7 +55,10 @@ function Edit() {
                 <h2>Edit Component</h2>
                 <p>{idToEdit} is the ID being tested</p>
                 <h3>Length of Session:</h3>
-                <p>{dataToEdit} Minutes</p>           
+                <p>Original Length: {dataToEdit} Minutes</p>
+                <p>New Length Below:</p>
+                <input type='number' min={defaultValue} onChange={handleChange} placeholder={dataToEdit + " Minutes"}/><br></br><br></br>      
+                <button onClick={editClick}>Edit</button>     
                 <button onClick={historyClick}>Return to History</button>
             </div>
         </>
