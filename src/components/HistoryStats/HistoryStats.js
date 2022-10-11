@@ -1,5 +1,4 @@
 import './HistoryStats.css'
-import Edit from '../../routes/Edit';
 import axios from 'axios'
 import { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom'
@@ -43,7 +42,7 @@ function HistoryStats() {
 
     const editClick = function(event) {
         let idToEdit = event.target.getAttribute('id')
-        console.log(idToEdit)
+        // console.log(idToEdit)
         navigate('/Edit', {state: {idToEdit}})
     }
 

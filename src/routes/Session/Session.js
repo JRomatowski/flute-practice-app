@@ -24,8 +24,8 @@ function Session() {
     const reviewClick = function(event) {
         event.preventDefault()
         let newSession = {"practice_sessions": [formState]}
-        // axios.post('http://127.0.0.1:8000/history/', newSession)
-        axios.post('https://flute-practice-app.herokuapp.com/history/', newSession)
+        axios.post('http://127.0.0.1:8000/history/', newSession)
+        // axios.post('https://flute-practice-app.herokuapp.com/history/', newSession)
         navigate('/Review')
     }
 

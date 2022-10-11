@@ -39,7 +39,7 @@ function History() {
                 {/* <h3 className='user-acknowledge'>Stats for {user}</h3> */}
                 <h3 className='user-acknowledge'>Stats</h3>
                 {/* Commented out the below line until I figure out the infinite loop problem */}
-                {/* <Chart1 /><br></br> */}
+                <Chart1 /><br></br>
                 <HistoryStats /><br></br>
                 <button id='home-button' onClick={initiateClick}>Go Home</button>
                 {/* <button id='logout-button' onClick={loginClick}>Log Out</button><br></br> */}

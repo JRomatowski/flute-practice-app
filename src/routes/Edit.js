@@ -19,7 +19,7 @@ function Edit() {
         // axios.get(`https://flute-practice-app.herokuapp.com/history/${idToEdit}`)
             .then(res => {
                 let data = res.data.practice_sessions
-                console.log(data)
+                // console.log(data)
                 setDataToEdit(data)
             })
     },[idToEdit])
@@ -30,15 +30,15 @@ function Edit() {
         navigate('/History')
     }
 
-    console.log(idToEdit)
-    console.log(dataToEdit)
+    // console.log(idToEdit)
+    // console.log(dataToEdit)
 
     return(
         <>  
             <div className='component-container'>
                 <h2>Edit Component</h2>
                 <p>{idToEdit} is the ID being tested</p>
-                <h3>Lenght of Session:</h3>
+                <h3>Length of Session:</h3>
                 <p>{dataToEdit} Minutes</p>           
                 <button onClick={historyClick}>Return to History</button>
             </div>
