@@ -9,8 +9,8 @@ function HistoryStats() {
     const [averageTime, setAverageTime] = useState('')
 
     useEffect(() => {
-        axios.get('http://127.0.0.1:8000/history')
-        // axios.get('https://flute-practice-app.herokuapp.com/history/')
+        // axios.get('http://127.0.0.1:8000/history')
+        axios.get('https://flute-practice-app.herokuapp.com/history/')
             .then(res => {
                 let data = res.data.practice_sessions
 

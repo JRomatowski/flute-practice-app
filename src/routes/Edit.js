@@ -18,8 +18,8 @@ function Edit() {
     const {idToEdit} = state;
 
     useEffect(() => {
-        axios.get(`http://127.0.0.1:8000/history/${idToEdit}`)
-        // axios.get(`https://flute-practice-app.herokuapp.com/history/${idToEdit}`)
+        // axios.get(`http://127.0.0.1:8000/history/${idToEdit}`)
+        axios.get(`https://flute-practice-app.herokuapp.com/history/${idToEdit}`)
             .then(res => {
                 let data = res.data.practice_sessions
                 // console.log(data)
@@ -42,7 +42,15 @@ function Edit() {
         event.preventDefault()
         let newLengthArray = formState
         let newLengthAmount = newLengthArray.length
-        axios.patch(`http://127.0.0.1:8000/history/edit/${idToEdit}/${newLengthAmount}/`,idToEdit,newLengthAmount)
+        // axios.patch(`http://127.0.0.1:8000/history/edit/${idToEdit}/${newLengthAmount}/`)
+        axios.patch(`https://flute-practice-app.herokuapp.com/history/edit/${idToEdit}/${newLengthAmount}/`)
+        navigate('/History')
+    }
+
+    const deleteClick = function() {
+        alert("confirm")
+        // axios.delete(`http://127.0.0.1:8000/history/${idToEdit}/`)
+        axios.delete(`https://flute-practice-app.herokuapp.com/history/${idToEdit}/`);
         navigate('/History')
     }
 
@@ -58,7 +66,8 @@ function Edit() {
                 <p>Original Length: {dataToEdit} Minutes</p>
                 <p>New Length Below:</p>
                 <input type='number' min={defaultValue} onChange={handleChange} placeholder={dataToEdit + " Minutes"}/><br></br><br></br>      
-                <button onClick={editClick}>Edit</button>     
+                <button onClick={editClick}>Update</button><br></br><br></br>
+                <button onClick={deleteClick}>Delete</button><br></br><br></br>     
                 <button onClick={historyClick}>Return to History</button>
             </div>
         </>
