@@ -29,17 +29,17 @@ function Review() {
 
     const sessionClick = function() {
         let idToDelete = sessionHistory.id
-        console.log(idToDelete)
+        // console.log(idToDelete)
         // axios.delete(`http://127.0.0.1:8000/history/${idToDelete}`, idToDelete)
-        axios.delete(`https://flute-practice-app.herokuapp.com/history/${idToDelete}`, idToDelete)
+        axios.delete(`https://flute-practice-app.herokuapp.com/history/${idToDelete}`)
         navigate('/Session')
     }
 
     const deleteClick = function() {
         let idToDelete = sessionHistory.id
-        console.log(idToDelete)
+        // console.log(idToDelete)
         // axios.delete(`http://127.0.0.1:8000/history/${idToDelete}`, idToDelete)
-        axios.delete(`https://flute-practice-app.herokuapp.com/history/${idToDelete}`, idToDelete)
+        axios.delete(`https://flute-practice-app.herokuapp.com/history/${idToDelete}`)
         navigate('/Initiate')
     } 
 

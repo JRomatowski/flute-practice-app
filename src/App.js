@@ -7,25 +7,17 @@ import Review from './routes/Review/Review';
 import History from './routes/History/History';
 import Contact from './routes/Contact/Contact';
 import Title from './components/Title/Title';
-// import { useNavigate } from 'react-router-dom'
+import Edit from './routes/Edit';
 
 // This is for testing
 // import { Link } from 'react-router-dom'
 
 function App() {
 
-//   const navigate = useNavigate();
-
-//   const contactClick = function() {
-//     navigate('/Contact')
-// }
-
-// const loginClick = function() {
-//     navigate('/')
-// }
-
   return (
+
     <div className="App">
+
       {/* Below is for testing purposes */}
       {/* <nav className="test-navbar">
         <Link to="/">Login</Link><br/>
@@ -35,9 +27,11 @@ function App() {
         <Link to='/history'>History Page</Link><br/>
         <Link to='/contact'>Contact Page</Link><br/>
       </nav> */}
+
       <h1 className='header'>
         <Title />
       </h1>
+
       <main className='main'>
         <Routes>
           <Route path='/' element={<Login/>}/>
@@ -46,12 +40,10 @@ function App() {
           <Route path='/review' element={<Review/>}/>
           <Route path='/history' element={<History/>}/>
           <Route path='/contact' element={<Contact/>}/>
+          <Route path='/history/edit' element={<Edit/>}/>
         </Routes>
       </main>
-      {/* <footer>
-            <button onClick={contactClick}>Contact</button><br></br>
-            <button onClick={loginClick}>Log Out</button>
-      </footer> */}
+
     </div>
   );
 }

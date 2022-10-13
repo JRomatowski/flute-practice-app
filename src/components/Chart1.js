@@ -8,6 +8,7 @@ import axios from 'axios'
 
 const Chart1 = () => {
 
+    // eslint-disable-next-line
     const [sessionHistory, setSessionHistory] = useState([])
     const [graphHistory, setGraphHistory] = useState([])
     const [dateHistory, setDateHistory] = useState([])
@@ -27,7 +28,8 @@ const Chart1 = () => {
                 setGraphHistory(lengthArray)
                 setDateHistory(dateArray)
             })
-    }, [sessionHistory])
+    }, [])
+    // Have "[sessionHistory] above after the comma".  This causes an infinite loop.  This is fine for review page.  
 
     return (
     <CDBContainer>

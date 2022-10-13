@@ -1,6 +1,7 @@
 import './HistoryStats.css'
 import axios from 'axios'
 import { useEffect, useState } from 'react';
+import { useNavigate } from 'react-router-dom'
 
 function HistoryStats() {
 
@@ -27,13 +28,22 @@ function HistoryStats() {
                 let averagePracticeAmountDisplay = averagePracticeAmountFloat.toFixed(1)
                 setAverageTime(averagePracticeAmountDisplay)                
             })
-    }, [sessionHistory])
+    },[])
+    // Make sure "[sessionHistory]" is above after the comma.  This causes an infinite loop.
 
-    const deleteOneClick = function(event) {
-        alert("Are you sure?")
-        let idToDelete = event.target.getAttribute('id')
-        // axios.delete(`http://127.0.0.1:8000/history/${idToDelete}`, idToDelete)
-        axios.delete(`https://flute-practice-app.herokuapp.com/history/${idToDelete}`, idToDelete)
+    // const deleteOneClick = function(event) {
+    //     alert("confirm")
+    //     let idToDelete = event.target.getAttribute('id')
+    //     // axios.delete(`http://127.0.0.1:8000/history/${idToDelete}`, idToDelete)
+    //     axios.delete(`https://flute-practice-app.herokuapp.com/history/${idToDelete}`, idToDelete);
+    // }
+
+    const navigate = useNavigate();
+
+    const editClick = function(event) {
+        let idToEdit = event.target.getAttribute('id')
+        // console.log(idToEdit)
+        navigate('/History/Edit', {state: {idToEdit}})
     }
 
     return(
@@ -43,8 +53,8 @@ function HistoryStats() {
             <div className='history-list-modify'>
                 {sessionHistory.map((historyThing, index) => (
                     <div className='history-span-container' key={index}>
-                        <span className='history-span' key={index}>{historyThing.date}: You practiced for {historyThing.length} minutes.</span>
-                        <button className='history-delete-button' onClick={deleteOneClick} id={historyThing.id}>X</button>
+                        <span className='history-span' key={index}>{historyThing.date}: You practiced for {historyThing.length} minutes. This is ID {historyThing.id}</span>
+                        <button className='history-delete-button' onClick={editClick} id={historyThing.id}>Edit</button>
                         <span>
                             {/* <button id={historyThing.id}>edit</button> */}
 
