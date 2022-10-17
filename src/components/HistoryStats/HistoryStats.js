@@ -2,7 +2,6 @@ import './HistoryStats.css'
 import axios from 'axios'
 import { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom'
-import Chart1 from '../Chart1';
 
 function HistoryStats() {
 
@@ -17,7 +16,6 @@ function HistoryStats() {
 
                 // Reversing array data to show newest first
                 // Not sure why thing needs an arrow => to thing again.  This works though.
-                // let reversedData = data.map(thing => thing).reverse();
                 let reversedData = data.map(thing => thing).sort(function (a, b){return a.id - b.id}).reverse();
                 setSessionHistory(reversedData)
                 
@@ -28,10 +26,10 @@ function HistoryStats() {
                 }
                 let averagePracticeAmountFloat = totalTime / data.length
                 let averagePracticeAmountDisplay = averagePracticeAmountFloat.toFixed(1)
-                setAverageTime(averagePracticeAmountDisplay)                
+                setAverageTime(averagePracticeAmountDisplay)
+
             })
     },[])
-    // Make sure "[sessionHistory]" is above after the comma.  This causes an infinite loop.
 
     // const deleteOneClick = function(event) {
     //     alert("confirm")
@@ -44,11 +42,8 @@ function HistoryStats() {
 
     const editClick = function(event) {
         let idToEdit = event.target.getAttribute('id')
-        // console.log(idToEdit)
         navigate('/History/Edit', {state: {idToEdit}})
     }
-
-    // console.log(sessionHistory)
 
     return(
         <>  
@@ -61,7 +56,6 @@ function HistoryStats() {
                         <button className='history-delete-button' onClick={editClick} id={historyThing.id}>Edit</button>
                         <span>
                             {/* <button id={historyThing.id}>edit</button> */}
-
                         </span>
                     </div>
                 ))}
