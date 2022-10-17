@@ -2,7 +2,6 @@ import './HistoryStats.css'
 import axios from 'axios'
 import { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom'
-import Chart1 from '../Chart1';
 
 function HistoryStats() {
 
