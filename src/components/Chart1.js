@@ -28,10 +28,8 @@ const Chart1 = () => {
                 let sortedDateArray = dateArray.sort(function (a, b){return a.id - b.id}).reverse()
                 setGraphHistory(sortedLengthArray)
                 setDateHistory(sortedDateArray)
-                console.log(graphHistory)
             })
     }, [])
-    // Have "[sessionHistory] above after the comma".  This causes an infinite loop.  This is fine for review page.  
 
     return (
     <CDBContainer>
