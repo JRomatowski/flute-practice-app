@@ -40,18 +40,24 @@ function Edit() {
 
     const editClick = function(event) {
         event.preventDefault()
-        let newLengthArray = formState
-        let newLengthAmount = newLengthArray.length
-        // axios.patch(`http://127.0.0.1:8000/history/edit/${idToEdit}/${newLengthAmount}/`)
-        axios.patch(`https://flute-practice-app.herokuapp.com/history/edit/${idToEdit}/${newLengthAmount}/`)
-        navigate('/History')
+        if (window.confirm("Are you sure you want to update this entry?")) {
+            let newLengthArray = formState
+            let newLengthAmount = newLengthArray.length
+            // axios.patch(`http://127.0.0.1:8000/history/edit/${idToEdit}/${newLengthAmount}/`)
+            axios.patch(`https://flute-practice-app.herokuapp.com/history/edit/${idToEdit}/${newLengthAmount}/`)
+            alert(`Updated to ${newLengthAmount} Minutes!`)
+            navigate('/History')
+        } 
     }
 
     const deleteClick = function() {
-        alert("confirm")
+        if (window.confirm("Are you sure you want to delete this entry?  You cannot undo this.")) {
         // axios.delete(`http://127.0.0.1:8000/history/${idToEdit}/`)
         axios.delete(`https://flute-practice-app.herokuapp.com/history/${idToEdit}/`);
+        alert("This entry is now permanently gone!")
         navigate('/History')
+        } 
+    
     }
 
     // console.log(idToEdit)
