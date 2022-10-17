@@ -8,8 +8,6 @@ import axios from 'axios'
 
 const Chart1 = () => {
 
-    // eslint-disable-next-line
-    const [sessionHistory, setSessionHistory] = useState([])
     const [graphHistory, setGraphHistory] = useState([])
     const [dateHistory, setDateHistory] = useState([])
 
@@ -18,15 +16,19 @@ const Chart1 = () => {
         axios.get('https://flute-practice-app.herokuapp.com/history/')
             .then(res => {
                 let data = res.data.practice_sessions
-                setSessionHistory(data)
+                let sortedData = data.sort(function (a, b){return a.id - b.id}).reverse()
                 let lengthArray = []
                 let dateArray = []
                 for(let i=0; i < data.length; i+=1) {
-                    lengthArray.push(data[i].length)
-                    dateArray.push(data[i].date)
+                    lengthArray.push(sortedData[i].length)
+                    dateArray.push(sortedData[i].date)
                 }
-                setGraphHistory(lengthArray)
-                setDateHistory(dateArray)
+                // let reversedData = data.map(thing => thing).sort(function (a, b){return a.id - b.id}).reverse();
+                let sortedLengthArray = lengthArray.sort(function (a, b){return a.id - b.id}).reverse()
+                let sortedDateArray = dateArray.sort(function (a, b){return a.id - b.id}).reverse()
+                setGraphHistory(sortedLengthArray)
+                setDateHistory(sortedDateArray)
+                console.log(graphHistory)
             })
     }, [])
     // Have "[sessionHistory] above after the comma".  This causes an infinite loop.  This is fine for review page.  

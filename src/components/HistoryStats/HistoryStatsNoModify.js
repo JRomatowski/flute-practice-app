@@ -15,7 +15,8 @@ function HistoryStatsNoModify() {
 
                 // Reversing array data to show newest first
                 // Not sure why thing needs an arrow => to thing again.  This works though.
-                let reversedData = data.map(thing => thing).reverse();
+                // let reversedData = data.map(thing => thing).reverse();
+                let reversedData = data.map(thing => thing).sort(function (a, b){return a.id - b.id}).reverse();
                 setSessionHistory(reversedData)
                 
                 // Finding Average Time Here
