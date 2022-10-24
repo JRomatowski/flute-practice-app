@@ -16,7 +16,7 @@ function Review() {
             .then(res => {
                 let data = res.data.practice_sessions
                 // Not sure why thing needs an arrow => to thing again.  This works though.
-                let reversedData = data.map(thing => thing).reverse();
+                let reversedData = data.map(thing => thing).sort(function (a, b){return a.id - b.id}).reverse();
                 setSessionHistory(reversedData[0])
             })
     },[])
@@ -42,6 +42,9 @@ function Review() {
         axios.delete(`https://flute-practice-app.herokuapp.com/history/${idToDelete}`)
         navigate('/Initiate')
     } 
+
+    console.log(sessionHistory)
+    console.log(sessionHistory.length)
 
     return(
         <>  
