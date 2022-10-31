@@ -11,7 +11,7 @@ This website is designed to be like the RP Diet App, Fitbit, or MyFitnessPal but
 
 # Screenshots of Website:
 
-<img src='./ft-login.png' height=400px width=300px>
+<!-- <img src='./ft-login.png' height=400px width=300px> -->
 <img src='./ft-initiate.png' height=400px width=300px>
 <img src='./ft-session.png' height=400px width=300px>
 <img src='./ft-review.png' height=400px width=300px>
@@ -52,7 +52,7 @@ This website is designed to be like the RP Diet App, Fitbit, or MyFitnessPal but
 - Please email this address with any comments, questions, or concerns!
 	- joshuaromatowski@gmail.com
 
-# Roadmap
+<!-- # Roadmap
 
 ### v.1 (Practice Journal - Performer and Practice_session model, CRUD, Host Backend)
 
@@ -242,4 +242,4 @@ model Student_Input<br/>
 - Etude Randomizer
 - Warmup Randomizer
 - Drone Randomizer
-- Input 2017, 2018, 2019, 2020, and 2021 data into my own database
+- Input 2017, 2018, 2019, 2020, and 2021 data into my own database -->
